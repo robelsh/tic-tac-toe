@@ -5,3 +5,6 @@
     Created by Etienne Jézéquel on 3/5/19
     Copyright (c) 2019 Etienne. All rights reserved.
 */
+
+"main.game.state.win" = "Joueur %@ à gagner !";
+"main.game.state.draw" = "Match nul";

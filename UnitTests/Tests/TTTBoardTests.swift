@@ -22,14 +22,7 @@ class TTTBoardTests: XCTestCase {
 
     func testDidPlayAppend() {
         viewModel.didPlay(at: 1)
-        XCTAssert(viewModel.getBoard().contains(1))
-    }
-    
-    func testDidPlaySort() {
-        viewModel.didPlay(at: 5)
-        viewModel.didPlay(at: 2)
-        viewModel.didPlay(at: 1)
-        XCTAssert(viewModel.getBoard() == [1, 2, 5])
+        XCTAssert(viewModel.getBoard(of: .first).contains(1))
     }
     
     func testDidPlayNextTurn() {
@@ -41,5 +34,27 @@ class TTTBoardTests: XCTestCase {
         viewModel.didPlay(at: 1)
         viewModel.didPlay(at: 3)
         XCTAssert(viewModel.getCurrentPlayer() == .first)
+    }
+    
+    func testDidPlayWin() {
+        viewModel.didPlay(at: 1)
+        viewModel.didPlay(at: 4)
+        viewModel.didPlay(at: 2)
+        viewModel.didPlay(at: 5)
+        viewModel.didPlay(at: 3)
+        XCTAssert(viewModel.getState() == .win)
+    }
+    
+    func testDidPlayDraw() {
+        viewModel.didPlay(at: 1)
+        viewModel.didPlay(at: 2)
+        viewModel.didPlay(at: 5)
+        viewModel.didPlay(at: 3)
+        viewModel.didPlay(at: 6)
+        viewModel.didPlay(at: 4)
+        viewModel.didPlay(at: 7)
+        viewModel.didPlay(at: 9)
+        viewModel.didPlay(at: 8)
+        XCTAssert(viewModel.getState() == .draw)
     }
 }

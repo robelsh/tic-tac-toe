@@ -16,6 +16,8 @@ class TTTBoardViewController: UIViewController {
     // MARK: - Publics
     
     // MARK: - IBOutlet
+    @IBOutlet fileprivate weak var boardView: UIView!
+    @IBOutlet fileprivate weak var gameStateLbl: UILabel!
     
     // MARK: - Application Lifecyle
     override func viewDidLoad() {
@@ -27,12 +29,31 @@ class TTTBoardViewController: UIViewController {
     @IBAction func handleTouchCell(_ sender: AnyObject) {
         if let index = sender.tag {
             (sender as? UIButton)?.isUserInteractionEnabled = false
-            sender.setImage(viewModel.getImageForPlayer().image, for: .normal)
-            viewModel.didPlay(at: index)
+            
+            switch viewModel.getCurrentPlayer() {
+            case .first:
+                sender.setImage(Asset.cross.image, for: .normal)
+            case .second:
+                sender.setImage(Asset.circle.image, for: .normal)
+            }
+            
+            viewModel.didPlay(at: index, { state in
+                self.boardView.isUserInteractionEnabled = false
+                switch state {
+                case .win:
+                    self.gameStateLbl.text = L10n.mainGameStateWin(self.viewModel.getCurrentPlayer() == .first ? "1" : "2")
+                case .draw:
+                    self.gameStateLbl.text = L10n.mainGameStateDraw
+                default:
+                    break
+                }
+            })
         }
     }
     
     @IBAction func handleReset(_ sender: Any) {
+        boardView.isUserInteractionEnabled = true
+        gameStateLbl.text = ""
         viewModel = TTBoardViewModel()
         for index in 1...Constants.numberOfCell {
             let button = view.viewWithTag(index) as? UIButton
@@ -48,8 +69,7 @@ extension TTTBoardViewController {
     
     // MARK: - Configurations
     fileprivate func setup() {
-        self.automaticallyAdjustsScrollViewInsets = false
-        
+        gameStateLbl.text = ""
     }
     
     // MARK: - Privates Functions

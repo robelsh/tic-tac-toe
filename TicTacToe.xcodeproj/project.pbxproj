@@ -22,6 +22,8 @@
 		739AB6A2222E86560092B81A /* TTTBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739AB6A1222E86560092B81A /* TTTBoardTests.swift */; };
 		739AB6A3222E86BE0092B81A /* TTBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739AB672222E76700092B81A /* TTBoardViewModel.swift */; };
 		739AB6A4222E87120092B81A /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD2E2A152CAC89AB6D0588B /* Images.swift */; };
+		739AB6A5222E9BBA0092B81A /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 739AB6A7222E9BBA0092B81A /* Localizable.strings */; };
+		739AB6AB222E9D6F0092B81A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6A2A0A37CE0392958490B /* Constants.swift */; };
 		7971F69CDC64DF7FCFA898E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECFF512FAC4162945D5E475A /* Foundation.framework */; };
 		805433DA23FAE8B813D4E7E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8A385EBD5FD7CCF6F51FD0 /* LaunchScreen.storyboard */; };
 		8DE05F33B57F9A7E061CF11A /* Colors.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3D02D0A8D448A0B343B4F22E /* Colors.xml */; };
@@ -31,7 +33,6 @@
 		D1012FB15187462250586B2B /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0ED8957478D301A08E2C8F /* Environment.swift */; };
 		E8483437336BF87C29FA7AD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED40D2CD620BD4940C2CC5CA /* AppDelegate.swift */; };
 		ED81EF7C7F4BB3AE67F807C5 /* Pods_TicTacToe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D1E25820FA3D5A89CDA3AC /* Pods_TicTacToe.framework */; };
-		F17C703F829EC59132ADE03F /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = FEBBDA0167BB33ACE835D551 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		739AB672222E76700092B81A /* TTBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTBoardViewModel.swift; sourceTree = "<group>"; };
 		739AB6A0222E86560092B81A /* UnitTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		739AB6A1222E86560092B81A /* TTTBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTBoardTests.swift; sourceTree = "<group>"; };
+		739AB6AA222E9BE20092B81A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8AADA028FBCCEA44E8323930 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A6A2A0A37CE0392958490B /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A9D7D14F8C0E47AFC66FA7C6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,7 +78,6 @@
 		ECFF512FAC4162945D5E475A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		ED40D2CD620BD4940C2CC5CA /* AppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDD2E2A152CAC89AB6D0588B /* Images.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
-		FEBBDA0167BB33ACE835D551 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,7 +173,7 @@
 		51DF2F8D9AA5415BEBC574BB /* Translations */ = {
 			isa = PBXGroup;
 			children = (
-				FEBBDA0167BB33ACE835D551 /* Localizable.strings */,
+				739AB6A7222E9BBA0092B81A /* Localizable.strings */,
 			);
 			path = Translations;
 			sourceTree = "<group>";
@@ -402,7 +403,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
+				fr,
 			);
 			mainGroup = 0F34480278DBACCC06B57BA0;
 			productRefGroup = DA528AE56F7C3A23D2A480FC /* Products */;
@@ -566,6 +567,7 @@
 				739AB6A2222E86560092B81A /* TTTBoardTests.swift in Sources */,
 				739AB6A4222E87120092B81A /* Images.swift in Sources */,
 				739AB6A3222E86BE0092B81A /* TTBoardViewModel.swift in Sources */,
+				739AB6AB222E9D6F0092B81A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,7 +588,7 @@
 				A5AB56687054547005B90F36 /* TTTLogger.swift in Sources */,
 				D1012FB15187462250586B2B /* Environment.swift in Sources */,
 				739AB66E222E71D50092B81A /* StoryboardsSegues.swift in Sources */,
-				F17C703F829EC59132ADE03F /* Localizable.strings in Sources */,
+				739AB6A5222E9BBA0092B81A /* Localizable.strings in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +602,17 @@
 			targetProxy = AB154636C558985231513EF3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		739AB6A7222E9BBA0092B81A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				739AB6AA222E9BE20092B81A /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1B4C35092092CEC58048FE43 /* Debug */ = {
@@ -625,6 +638,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -763,6 +777,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
