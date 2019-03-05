@@ -43,4 +43,8 @@ class TTBoardViewModel {
         board.sort()
         nextTurn()
     }
+    
+    func getBoard() -> [Int] {
+        return board
+    }
 }
