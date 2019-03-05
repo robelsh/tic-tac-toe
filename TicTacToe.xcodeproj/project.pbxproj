@@ -17,6 +17,7 @@
 		739AB66A222E71CD0092B81A /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739AB669222E71CD0092B81A /* Fonts.swift */; };
 		739AB66D222E71D50092B81A /* StoryboardsScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739AB66B222E71D50092B81A /* StoryboardsScenes.swift */; };
 		739AB66E222E71D50092B81A /* StoryboardsSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739AB66C222E71D50092B81A /* StoryboardsSegues.swift */; };
+		739AB670222E73D70092B81A /* TTTBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739AB66F222E73D70092B81A /* TTTBoardViewController.swift */; };
 		7971F69CDC64DF7FCFA898E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECFF512FAC4162945D5E475A /* Foundation.framework */; };
 		805433DA23FAE8B813D4E7E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8A385EBD5FD7CCF6F51FD0 /* LaunchScreen.storyboard */; };
 		8DE05F33B57F9A7E061CF11A /* Colors.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3D02D0A8D448A0B343B4F22E /* Colors.xml */; };
@@ -56,6 +57,7 @@
 		739AB669222E71CD0092B81A /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		739AB66B222E71D50092B81A /* StoryboardsScenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardsScenes.swift; sourceTree = "<group>"; };
 		739AB66C222E71D50092B81A /* StoryboardsSegues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardsSegues.swift; sourceTree = "<group>"; };
+		739AB66F222E73D70092B81A /* TTTBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTBoardViewController.swift; sourceTree = "<group>"; };
 		8AADA028FBCCEA44E8323930 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A6A2A0A37CE0392958490B /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A9D7D14F8C0E47AFC66FA7C6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 		E3438FEF1B39768028F26C5C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				739AB66F222E73D70092B81A /* TTTBoardViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -550,6 +553,7 @@
 				9AA1D54453B5C7A592157FD5 /* Strings.swift in Sources */,
 				3ABDBDEACDE2EA363C61E759 /* Images.swift in Sources */,
 				BEE8B79D2E7882006DECF381 /* Colors.swift in Sources */,
+				739AB670222E73D70092B81A /* TTTBoardViewController.swift in Sources */,
 				341223DC7F5DF464ED0CFE1F /* Constants.swift in Sources */,
 				739AB66D222E71D50092B81A /* StoryboardsScenes.swift in Sources */,
 				6F140E3947D27C8267EEEE1E /* UIViewController.swift in Sources */,
