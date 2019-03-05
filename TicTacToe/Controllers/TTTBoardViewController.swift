@@ -11,6 +11,7 @@ import UIKit
 class TTTBoardViewController: UIViewController {
     
     // MARK: - Privates
+    private var viewModel: TTBoardViewModel = TTBoardViewModel()
     
     // MARK: - Publics
     
@@ -24,11 +25,20 @@ class TTTBoardViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func handleTouchCell(_ sender: AnyObject) {
-        sender.setImage(Asset.cross.image, for: .normal)
+        if let index = sender.tag {
+            (sender as? UIButton)?.isUserInteractionEnabled = false
+            sender.setImage(viewModel.getImageForPlayer().image, for: .normal)
+            viewModel.didPlay(at: index)
+        }
     }
     
     @IBAction func handleReset(_ sender: Any) {
-        
+        viewModel = TTBoardViewModel()
+        for index in 1...Constants.numberOfCell {
+            let button = view.viewWithTag(index) as? UIButton
+            button?.isUserInteractionEnabled = true
+            button?.setImage(nil, for: .normal)
+        }
     }
     
 }
