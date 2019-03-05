@@ -1,0 +1,45 @@
+//
+//  TTTBoardTests.swift
+//  UnitTests
+//
+//  Created by Etienne Jézéquel on 05/03/2019.
+//  Copyright © 2019 Etienne. All rights reserved.
+//
+
+import XCTest
+
+class TTTBoardTests: XCTestCase {
+    private var viewModel = TTBoardViewModel()
+    
+    override func setUp() {
+        // This method is called before the invocation of each test method in the class.
+        viewModel = TTBoardViewModel()
+    }
+
+    override func tearDown() {
+        // This method is called after the invocation of each test method in the class.
+    }
+
+    func testDidPlayAppend() {
+        viewModel.didPlay(at: 1)
+        XCTAssert(viewModel.getBoard().contains(1))
+    }
+    
+    func testDidPlaySort() {
+        viewModel.didPlay(at: 5)
+        viewModel.didPlay(at: 2)
+        viewModel.didPlay(at: 1)
+        XCTAssert(viewModel.getBoard() == [1, 2, 5])
+    }
+    
+    func testDidPlayNextTurn() {
+        viewModel.didPlay(at: 1)
+        XCTAssert(viewModel.getCurrentPlayer() == .second)
+    }
+    
+    func testDidPlayNextTurn2() {
+        viewModel.didPlay(at: 1)
+        viewModel.didPlay(at: 3)
+        XCTAssert(viewModel.getCurrentPlayer() == .first)
+    }
+}

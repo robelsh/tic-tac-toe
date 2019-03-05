@@ -17,6 +17,11 @@
 		739AB66A222E71CD0092B81A /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739AB669222E71CD0092B81A /* Fonts.swift */; };
 		739AB66D222E71D50092B81A /* StoryboardsScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739AB66B222E71D50092B81A /* StoryboardsScenes.swift */; };
 		739AB66E222E71D50092B81A /* StoryboardsSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739AB66C222E71D50092B81A /* StoryboardsSegues.swift */; };
+		739AB670222E73D70092B81A /* TTTBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739AB66F222E73D70092B81A /* TTTBoardViewController.swift */; };
+		739AB673222E76700092B81A /* TTBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739AB672222E76700092B81A /* TTBoardViewModel.swift */; };
+		739AB6A2222E86560092B81A /* TTTBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739AB6A1222E86560092B81A /* TTTBoardTests.swift */; };
+		739AB6A3222E86BE0092B81A /* TTBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739AB672222E76700092B81A /* TTBoardViewModel.swift */; };
+		739AB6A4222E87120092B81A /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD2E2A152CAC89AB6D0588B /* Images.swift */; };
 		7971F69CDC64DF7FCFA898E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECFF512FAC4162945D5E475A /* Foundation.framework */; };
 		805433DA23FAE8B813D4E7E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8A385EBD5FD7CCF6F51FD0 /* LaunchScreen.storyboard */; };
 		8DE05F33B57F9A7E061CF11A /* Colors.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3D02D0A8D448A0B343B4F22E /* Colors.xml */; };
@@ -56,6 +61,10 @@
 		739AB669222E71CD0092B81A /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		739AB66B222E71D50092B81A /* StoryboardsScenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardsScenes.swift; sourceTree = "<group>"; };
 		739AB66C222E71D50092B81A /* StoryboardsSegues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardsSegues.swift; sourceTree = "<group>"; };
+		739AB66F222E73D70092B81A /* TTTBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTBoardViewController.swift; sourceTree = "<group>"; };
+		739AB672222E76700092B81A /* TTBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTBoardViewModel.swift; sourceTree = "<group>"; };
+		739AB6A0222E86560092B81A /* UnitTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		739AB6A1222E86560092B81A /* TTTBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTBoardTests.swift; sourceTree = "<group>"; };
 		8AADA028FBCCEA44E8323930 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A6A2A0A37CE0392958490B /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A9D7D14F8C0E47AFC66FA7C6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -150,6 +159,7 @@
 				ED40D2CD620BD4940C2CC5CA /* AppDelegate.swift */,
 				4A12CF438B4C25F6EEBDD8AF /* Models */,
 				2FF4CF94D1198671DC060F01 /* Common */,
+				739AB671222E76580092B81A /* ViewModel */,
 				E3438FEF1B39768028F26C5C /* Controllers */,
 				6350360C8BA400F7D4530B78 /* Views */,
 				A0681E76707EBFE8DD6C5BF8 /* Storyboards */,
@@ -180,6 +190,8 @@
 		6C187E35FF77D89D9295CB4A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				739AB6A1222E86560092B81A /* TTTBoardTests.swift */,
+				739AB6A0222E86560092B81A /* UnitTests-Bridging-Header.h */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -197,6 +209,14 @@
 				2B31882F3D5DA452418D3401 /* UIViewController.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		739AB671222E76580092B81A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				739AB672222E76700092B81A /* TTBoardViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		7FE0E25AFC10DC3D87C55A13 /* Pods */ = {
@@ -283,6 +303,7 @@
 		E3438FEF1B39768028F26C5C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				739AB66F222E73D70092B81A /* TTTBoardViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -368,6 +389,9 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Etienne;
 				TargetAttributes = {
+					0056D57B6C4A8206A9D2D6BF = {
+						LastSwiftMigration = 1010;
+					};
 					983E88DE14B576928970050E = {
 						ProvisioningStyle = Manual;
 					};
@@ -539,6 +563,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				739AB6A2222E86560092B81A /* TTTBoardTests.swift in Sources */,
+				739AB6A4222E87120092B81A /* Images.swift in Sources */,
+				739AB6A3222E86BE0092B81A /* TTBoardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,9 +574,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8483437336BF87C29FA7AD4 /* AppDelegate.swift in Sources */,
+				739AB673222E76700092B81A /* TTBoardViewModel.swift in Sources */,
 				9AA1D54453B5C7A592157FD5 /* Strings.swift in Sources */,
 				3ABDBDEACDE2EA363C61E759 /* Images.swift in Sources */,
 				BEE8B79D2E7882006DECF381 /* Colors.swift in Sources */,
+				739AB670222E73D70092B81A /* TTTBoardViewController.swift in Sources */,
 				341223DC7F5DF464ED0CFE1F /* Constants.swift in Sources */,
 				739AB66D222E71D50092B81A /* StoryboardsScenes.swift in Sources */,
 				6F140E3947D27C8267EEEE1E /* UIViewController.swift in Sources */,
@@ -685,6 +714,7 @@
 			baseConfigurationReference = 01CFBA9110EA4D74C749ACE0 /* Pods-unit_tests-UnitTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TicTacToe.app/TicTacToe";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -692,9 +722,12 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				INFOPLIST_FILE = "UnitTests/Resources/UnitTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.etienne.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "UnitTests/Tests/UnitTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -706,6 +739,7 @@
 			baseConfigurationReference = 093F9C01E1DBCF5A4F2723B0 /* Pods-unit_tests-UnitTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TicTacToe.app/TicTacToe";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -713,9 +747,11 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				INFOPLIST_FILE = "UnitTests/Resources/UnitTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.etienne.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "UnitTests/Tests/UnitTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
