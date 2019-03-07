@@ -34,12 +34,14 @@ class TTBoardViewModel {
     // MARK: - Privates Functions
     private func nextTurn() {
         currentPlayer = currentPlayer == .first ? .second : .first
+        logger.info("Next Player")
     }
     
     private func boardIsFull() -> Bool {
         let count = (board[.first]?.count ?? 0) + (board[.second]?.count ?? 0)
         let isFull = count == Constants.numberOfCell
         state = isFull ? .draw : state
+        logger.info("Board is full")
         return isFull
     }
     
@@ -52,6 +54,7 @@ class TTBoardViewModel {
             }
             if !isWinArray.contains(false) {
                 state = .win
+                logger.info("Player \(currentPlayer == .first ? 1 : 2) is the winner")
                 return true
             }
         }
@@ -65,6 +68,7 @@ class TTBoardViewModel {
     
     func didPlay(at index: Int, _ didFinish: ((GameState) -> Void)? = nil) {
         board[currentPlayer]?.append(index)
+        logger.info("Player \(currentPlayer == .first ? 1 : 2) has played")
         if boardIsWin() || boardIsFull() {
             didFinish?(state)
         } else {
