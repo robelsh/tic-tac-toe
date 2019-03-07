@@ -18,6 +18,7 @@ class TTTBoardViewController: UIViewController {
     // MARK: - IBOutlet
     @IBOutlet fileprivate weak var boardView: UIView!
     @IBOutlet fileprivate weak var gameStateLbl: UILabel!
+    @IBOutlet fileprivate weak var currentPlayerLbl: UILabel!
     
     // MARK: - Application Lifecyle
     override func viewDidLoad() {
@@ -37,12 +38,15 @@ class TTTBoardViewController: UIViewController {
                 sender.setImage(Asset.circle.image, for: .normal)
             }
             
+            currentPlayerLbl.text = viewModel.getCurrentPlayer() == .first ? L10n.mainLblCurrentPlayer(1) : L10n.mainLblCurrentPlayer(2)
             viewModel.didPlay(at: index, { state in
                 self.boardView.isUserInteractionEnabled = false
                 switch state {
                 case .win:
+                    self.boardView.backgroundColor = ColorName.green.color
                     self.gameStateLbl.text = L10n.mainGameStateWin(self.viewModel.getCurrentPlayer() == .first ? "1" : "2")
                 case .draw:
+                    self.boardView.backgroundColor = ColorName.red.color
                     self.gameStateLbl.text = L10n.mainGameStateDraw
                 default:
                     break
@@ -54,7 +58,11 @@ class TTTBoardViewController: UIViewController {
     @IBAction func handleReset(_ sender: Any) {
         boardView.isUserInteractionEnabled = true
         gameStateLbl.text = ""
+        boardView.backgroundColor = ColorName.black.color
+        currentPlayerLbl.text = L10n.mainLblCurrentPlayer(1)
         viewModel = TTBoardViewModel()
+        
+        // Reset Buttons
         for index in 1...Constants.numberOfCell {
             let button = view.viewWithTag(index) as? UIButton
             button?.isUserInteractionEnabled = true
@@ -69,10 +77,11 @@ extension TTTBoardViewController {
     
     // MARK: - Configurations
     fileprivate func setup() {
+        // Init view
         gameStateLbl.text = ""
+        currentPlayerLbl.text = ""
+        gameStateLbl.font = UIFont(font: FontFamily.Merriweather.regular, size: 12)
+        currentPlayerLbl.font = UIFont(font: FontFamily.Merriweather.regular, size: 12)
+        boardView.backgroundColor = ColorName.black.color
     }
-    
-    // MARK: - Privates Functions
-    
-    // MARK: - Publics Functions
 }

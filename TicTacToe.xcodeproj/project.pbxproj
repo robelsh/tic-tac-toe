@@ -24,6 +24,7 @@
 		739AB6A4222E87120092B81A /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD2E2A152CAC89AB6D0588B /* Images.swift */; };
 		739AB6A5222E9BBA0092B81A /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 739AB6A7222E9BBA0092B81A /* Localizable.strings */; };
 		739AB6AB222E9D6F0092B81A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6A2A0A37CE0392958490B /* Constants.swift */; };
+		73C4837F22318E990091EA81 /* Merriweather-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 73C4837E22318E990091EA81 /* Merriweather-Regular.otf */; };
 		7971F69CDC64DF7FCFA898E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECFF512FAC4162945D5E475A /* Foundation.framework */; };
 		805433DA23FAE8B813D4E7E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8A385EBD5FD7CCF6F51FD0 /* LaunchScreen.storyboard */; };
 		8DE05F33B57F9A7E061CF11A /* Colors.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3D02D0A8D448A0B343B4F22E /* Colors.xml */; };
@@ -67,6 +68,7 @@
 		739AB6A0222E86560092B81A /* UnitTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		739AB6A1222E86560092B81A /* TTTBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTBoardTests.swift; sourceTree = "<group>"; };
 		739AB6AA222E9BE20092B81A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		73C4837E22318E990091EA81 /* Merriweather-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.otf"; sourceTree = "<group>"; };
 		8AADA028FBCCEA44E8323930 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A6A2A0A37CE0392958490B /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A9D7D14F8C0E47AFC66FA7C6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 		739AB667222E6FF70092B81A /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				73C4837E22318E990091EA81 /* Merriweather-Regular.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				8DE05F33B57F9A7E061CF11A /* Colors.xml in Resources */,
 				5FB6B98386B06D04DFD52AA2 /* Main.storyboard in Resources */,
 				805433DA23FAE8B813D4E7E4 /* LaunchScreen.storyboard in Resources */,
+				73C4837F22318E990091EA81 /* Merriweather-Regular.otf in Resources */,
 				4377DFAB5134A89BBBD3FB88 /* Assets.xcassets in Resources */,
 				580ACFAB168B6AC76914EC01 /* Settings.bundle in Resources */,
 			);

@@ -16,6 +16,10 @@ internal enum L10n {
   internal static func mainGameStateWin(_ p1: String) -> String {
     return L10n.tr("Localizable", "main.game.state.win", p1)
   }
+  /// Au tour du joueur %d
+  internal static func mainLblCurrentPlayer(_ p1: Int) -> String {
+    return L10n.tr("Localizable", "main.lbl.current.player", p1)
+  }
 }
 // swiftlint:enable function_parameter_count identifier_name line_length type_body_length
 

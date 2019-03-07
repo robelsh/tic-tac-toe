@@ -8,3 +8,4 @@
 
 "main.game.state.win" = "Joueur %@ à gagner !";
 "main.game.state.draw" = "Match nul";
+"main.lbl.current.player" = "Au tour du joueur %d";
