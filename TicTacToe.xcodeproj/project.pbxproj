@@ -25,6 +25,7 @@
 		739AB6A5222E9BBA0092B81A /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 739AB6A7222E9BBA0092B81A /* Localizable.strings */; };
 		739AB6AB222E9D6F0092B81A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6A2A0A37CE0392958490B /* Constants.swift */; };
 		73C4837F22318E990091EA81 /* Merriweather-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 73C4837E22318E990091EA81 /* Merriweather-Regular.otf */; };
+		73C4838022318F630091EA81 /* TTTLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4839ADBFF8A20D9536BCBB9 /* TTTLogger.swift */; };
 		7971F69CDC64DF7FCFA898E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECFF512FAC4162945D5E475A /* Foundation.framework */; };
 		805433DA23FAE8B813D4E7E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8A385EBD5FD7CCF6F51FD0 /* LaunchScreen.storyboard */; };
 		8DE05F33B57F9A7E061CF11A /* Colors.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3D02D0A8D448A0B343B4F22E /* Colors.xml */; };
@@ -69,6 +70,7 @@
 		739AB6A1222E86560092B81A /* TTTBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTBoardTests.swift; sourceTree = "<group>"; };
 		739AB6AA222E9BE20092B81A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		73C4837E22318E990091EA81 /* Merriweather-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.otf"; sourceTree = "<group>"; };
+		73C4838122318FB80091EA81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8AADA028FBCCEA44E8323930 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A6A2A0A37CE0392958490B /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A9D7D14F8C0E47AFC66FA7C6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -407,6 +409,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				fr,
+				en,
 			);
 			mainGroup = 0F34480278DBACCC06B57BA0;
 			productRefGroup = DA528AE56F7C3A23D2A480FC /* Products */;
@@ -572,6 +575,7 @@
 				739AB6A4222E87120092B81A /* Images.swift in Sources */,
 				739AB6A3222E86BE0092B81A /* TTBoardViewModel.swift in Sources */,
 				739AB6AB222E9D6F0092B81A /* Constants.swift in Sources */,
+				73C4838022318F630091EA81 /* TTTLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +616,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				739AB6AA222E9BE20092B81A /* fr */,
+				73C4838122318FB80091EA81 /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

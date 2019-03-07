@@ -1,0 +1,11 @@
+/*
+    Localizable.strings
+    TicTacToe
+
+    Created by Etienne Jézéquel on 3/5/19
+    Copyright (c) 2019 Etienne. All rights reserved.
+*/
+
+"main.game.state.win" = "Player %@ has won !";
+"main.game.state.draw" = "It's a draw";
+"main.lbl.current.player" = "Player %d, it's your turn";
