@@ -10,6 +10,8 @@ import Foundation
 
 // swiftlint:disable function_parameter_count identifier_name line_length type_body_length
 internal enum L10n {
+  /// Rejouer
+  internal static let mainBtnReset = L10n.tr("Localizable", "main.btn.reset")
   /// Match nul
   internal static let mainGameStateDraw = L10n.tr("Localizable", "main.game.state.draw")
   /// Joueur %@ à gagner !

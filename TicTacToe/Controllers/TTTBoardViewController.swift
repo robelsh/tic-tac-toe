@@ -19,6 +19,7 @@ class TTTBoardViewController: UIViewController {
     @IBOutlet fileprivate weak var boardView: UIView!
     @IBOutlet fileprivate weak var gameStateLbl: UILabel!
     @IBOutlet fileprivate weak var currentPlayerLbl: UILabel!
+    @IBOutlet fileprivate weak var resetBtn: UIButton!
     
     // MARK: - Application Lifecyle
     override func viewDidLoad() {
@@ -83,5 +84,6 @@ extension TTTBoardViewController {
         gameStateLbl.font = UIFont(font: FontFamily.Merriweather.regular, size: 12)
         currentPlayerLbl.font = UIFont(font: FontFamily.Merriweather.regular, size: 12)
         boardView.backgroundColor = ColorName.black.color
+        resetBtn.setTitle(L10n.mainBtnReset, for: .normal)
     }
 }

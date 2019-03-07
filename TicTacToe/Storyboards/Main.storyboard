@@ -184,6 +184,7 @@
                         <outlet property="boardView" destination="zmJ-Px-G9M" id="MCb-r8-N4J"/>
                         <outlet property="currentPlayerLbl" destination="iVr-Ym-m4e" id="UUd-BP-nht"/>
                         <outlet property="gameStateLbl" destination="45i-H6-Meh" id="pd3-33-nSV"/>
+                        <outlet property="resetBtn" destination="jlE-wq-3j4" id="wwz-P1-9p1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rlB-EH-0qv" userLabel="First Responder" sceneMemberID="firstResponder"/>

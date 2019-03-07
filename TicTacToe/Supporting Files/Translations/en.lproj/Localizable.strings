@@ -9,3 +9,4 @@
 "main.game.state.win" = "Player %@ has won !";
 "main.game.state.draw" = "It's a draw";
 "main.lbl.current.player" = "Player %d, it's your turn";
+"main.btn.reset" = "Reset";
