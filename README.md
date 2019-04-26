@@ -1,5 +1,5 @@
 # tic-tac-toe
-Tic-tac-toe Kata in Swift
+Tic-tac-toe Kata in Swift 5
 
 ## Rules
 
@@ -17,6 +17,17 @@ Tic-tac-toe Kata in Swift
 
 - If all nine squares are filled and neither player has three in a row, the game is a draw.
 
+## Instalation (Cocoapods)
+
+- Open Terminal App
+- Go to the project folder (where the Podfile file is) 
+- Execute `$ pod install` in the terminal
+
+## Run (refer to Instalation before Run)
+
+- Open XCode project 
+- Run the app with XCode 10.2 on a simulator or a device
+
 ## Externals libraries
 
 - [SwiftGen](https://github.com/SwiftGen/SwiftGen)
@@ -30,3 +41,4 @@ Tic-tac-toe Kata in Swift
 - [SwiftLint](https://github.com/realm/SwiftLint) 
 
 >A tool to enforce Swift style and conventions
+

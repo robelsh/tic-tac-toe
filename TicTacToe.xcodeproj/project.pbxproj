@@ -396,20 +396,22 @@
 				ORGANIZATIONNAME = Etienne;
 				TargetAttributes = {
 					0056D57B6C4A8206A9D2D6BF = {
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 					983E88DE14B576928970050E = {
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 					};
 				};
 			};
 			buildConfigurationList = F9A01AAE7C5F8F1B6EA26582 /* Build configuration list for PBXProject "TicTacToe" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				fr,
 				en,
+				Base,
 			);
 			mainGroup = 0F34480278DBACCC06B57BA0;
 			productRefGroup = DA528AE56F7C3A23D2A480FC /* Products */;
@@ -637,7 +639,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.etienne.${PRODUCT_NAME:rfc1034identifier}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -726,7 +728,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.etienne.${PRODUCT_NAME:rfc1034identifier}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -751,7 +753,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "UnitTests/Tests/UnitTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -775,7 +777,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "UnitTests/Tests/UnitTests-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
