@@ -20,13 +20,13 @@ Tic-tac-toe Kata in Swift 5
 ## Instalation (Cocoapods)
 
 - Open Terminal App
-- Go to the project folder (where the Podfile file is) 
-- Execute `$ pod install` in the terminal
+- Go to the project folder (where the 'Podfile' file is).
+- Execute `$ pod install` in the terminal.
 
 ## Run (refer to Instalation before Run)
 
-- Open XCode project 
-- Run the app with XCode 10.2 on a simulator or a device
+- Open XCode workspace.
+- Run the app with XCode 10.2 on a simulator or a device with iOS 9 at least.
 
 ## Externals libraries
 
